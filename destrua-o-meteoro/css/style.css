@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #00bfff;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #111;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #00ffff;
+  outline: none;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+p, li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+button {
+  background-color: #00bfff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  color: #0b0b0b;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #00ffff;
+  outline: none;
+}
+
+#gameCanvas {
+  display: block;
+  background-color: #000; /* Canvas fundo será desenhado no JS */
+  border: 2px solid #00bfff;
+  margin: 0 auto;
+  width: 1000px;
+  height: 600px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+
+
